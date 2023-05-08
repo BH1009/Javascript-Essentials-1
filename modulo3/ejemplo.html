@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <input id="myId" type="text"></input>
+    <!-- <button onclick="console.log(document.getElementById('myId').value)">Obtener Texto</button> -->
+    <button onclick="alert(document.getElementById('myId').value)">Obtener Texto</button>
+    <script>
+        //Ejemplode alert
+        alert("¡Hola, Mundo!")
+        alert("¡Hola, Mundo!, por segunda ocasión");
+
+        //Ejemplo de confirm 
+        let remove = confirm("¿Eliminar todos los datos?");
+        let message = remove ? "Eliminando Datos" : "Cancelado"
+
+        console.log(message);
+
+        //Ejemplo de prompt
+        let name = window.prompt("¿Cuál es tu nombre?", "Juan Pérez");
+        name = name ? name : "anónimo";
+
+        let age = prompt("Hola " + name + " ¿Cuántos años tienes?");
+        alert(name + " tiene " + age + " años");
+
+    </script>
+</body>
+
+</html>
